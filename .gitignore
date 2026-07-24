@@ -7,4 +7,5 @@ ENV/
 instance/
 *.sqlite3
 *.db
+*.sqlite
 .env
