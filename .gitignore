@@ -1,11 +1,21 @@
+# Editor & OS settings (エディタやOSの自動生成ファイル)
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Python (キャッシュと仮想環境)
 __pycache__/
 *.py[cod]
 *$py.class
 .venv/
 venv/
 ENV/
+
+# Flask & Secrets (インスタンスフォルダと機密情報)
 instance/
+.env
+
+# Databases (ローカルDBの実ファイル)
+*.sqlite
 *.sqlite3
 *.db
-*.sqlite
-.env
