@@ -1,0 +1,24 @@
+/* 基本設定 */
+html { font-family: sans-serif; background: #f4f6f8; color: #333; padding: 1rem; }
+body { max-width: 680px; margin: 0 auto; background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+h1, h2 { color: #2b6cb0; }
+a { color: #3182ce; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ナビゲーション */
+nav { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #e2e8f0; padding-bottom: 1rem; margin-bottom: 1.5rem; }
+nav ul { display: flex; gap: 1rem; list-style: none; padding: 0; margin: 0; }
+
+/* フォーム関係 */
+form { display: flex; flex-direction: column; gap: 0.8rem; margin-bottom: 1rem; }
+input[type="text"], input[type="password"], textarea { width: 100%; padding: 0.6rem; border: 1px solid #cbd5e0; border-radius: 4px; box-sizing: border-box; }
+input[type="submit"], .action { display: inline-block; background: #3182ce; color: white; padding: 0.6rem 1.2rem; border: none; border-radius: 4px; cursor: pointer; text-align: center; font-weight: bold; }
+input[type="submit"]:hover, .action:hover { background: #2b6cb0; text-decoration: none; }
+input.danger { background: #e53e3e; }
+input.danger:hover { background: #c53030; }
+
+/* 投稿（カード表示） */
+article.post { background: #f7fafc; border: 1px solid #e2e8f0; padding: 1rem; border-radius: 6px; margin-bottom: 1rem; }
+article.post header { display: flex; justify-content: space-between; align-items: flex-start; }
+article.post .about { font-size: 0.85rem; color: #718096; margin-top: 0.2rem; }
+article.post .body { margin-top: 0.8rem; line-height: 1.6; }
