@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    <h1>{% block title %}新規投稿{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+    <form method="post">
+        <label for="title">タイトル（部位やメニューなど）</label>
+        <input name="title" id="title" value="{{ request.form['title'] }}" required>
+        <label for="body">内容（重量・セット数・メモなど）</label>
+        <textarea name="body" id="body">{{ request.form['body'] }}</textarea>
+        <input type="submit" value="保存">
+    </form>
+{% endblock %}
