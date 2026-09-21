@@ -11,8 +11,7 @@ CREATE TABLE post (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     author_id INTEGER NOT NULL,
     created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    exercise TEXT NOT NULL,
-    weight INTEGER NOT NULL,
-    reps INTEGER NOT NULL,
+    title TEXT NOT NULL,
+    body TEXT NOT NULL,
     FOREIGN KEY (author_id) REFERENCES user (id)
 );
